@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishdetailComponent } from '../dishdetail/dishdetail.component';
 import { Dish } from '../shared/dish';
 import { DISHES } from '../shared/dishes';
 import { DishService } from '../services/dish.service';
