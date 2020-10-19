@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { DishService } from './services/dish.service';
 import { LeaderService } from './services/leader.service';
@@ -24,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,11 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
+  ],
+  entryComponents: [
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,8 +51,11 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatDialogModule,
     AppRoutingModule
+
   ],
+
   providers: [
     DishService,
     PromotionService,
